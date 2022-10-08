@@ -1,0 +1,28 @@
+#+TITLE: scm2
+#+DATE: 2022-09-20
+#+AUTHOR: ellis
+#+EMAIL: ellis@rwest.io
+#+DESCRIPTION: R7RS compliant scheme in Rust
++ source code: [[https://hg.rwest.io/scm2]]
+  - [[https://github.com/richardwesthaver/scm2][github mirror]]
+
+
+This is the second iteration of my series of PL research projects. See
+[[https://rwest.io/projects/scm1.html][scm1]] for our initial implementation.
+
+=scm2= is a [[https://small.r7rs.org/attachment/r7rs.pdf][R7RS]] compliant implementation of [[https://www.scheme.org/][scheme]]. It is much more
+usable than =scm1= and has no style or dependency restrictions. We
+make use of various libraries available in the Rust ecosystem and
+write in a reader-friendly manner.
+
+Here are the goals for =scm1=:
+- R7RS compliant
+- Cross-platform support (Linux/Win/Mac/Web)
+- Parser-Generator driven (lalrpop)
+- Simple public API (lib crate)
+- Full test suite
+
+#+begin_quote
+In the Scheme/Lisp world the norm is for more implementations per
+author than authors per implementation.
+#+end_quote
